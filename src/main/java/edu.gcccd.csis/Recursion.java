@@ -23,8 +23,9 @@ public class Recursion {
      * An example input String "hello" should return hel*lo.
      */
     static String printStars(final String s) {
-        if(s.length() <= 1){
-            return String.format("%s",s);
+        //null case first to short circuit given null s value
+        if(s == null || s.length() <= 1){
+            return s;
         }
         if(s.charAt(0) == s.charAt(1)){
             return s.charAt(0) + "*" + printStars(s.substring(1));

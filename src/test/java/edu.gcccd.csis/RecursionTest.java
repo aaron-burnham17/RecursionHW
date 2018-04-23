@@ -9,10 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RecursionTest {
 
-    @BeforeEach
-    void setUp() {
-    }
-
     @Test
     public void printEveryOtherTest(){
         int[] test = new int[]{1,2,3,4,5,6,7,8,9,10};
@@ -29,13 +25,13 @@ class RecursionTest {
     @Test
     public void printStarsTest(){
 
+        assertTrue("h*he*el*lo*o".equals(printStars("hheelloo")));
+        assertTrue("h*h*h*h*h".equals(printStars("hhhhh")));
         assertTrue("hel*lo".equals(printStars("hello")));
         assertTrue("as*sertion tes*seract".equals(printStars("assertion tesseract")));
+        // Error-Empty Cases
         assertEquals("",printStars(""));
+        assertEquals(null,printStars(null));
 
-    }
-
-    @AfterEach
-    void tearDown() {
     }
 }
