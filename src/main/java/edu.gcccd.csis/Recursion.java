@@ -24,7 +24,7 @@ public class Recursion {
      */
     static String printStars(final String s) {
         if(s.length() <= 1){
-            return String.format("%s",s.charAt(0));
+            return String.format("%s",s);
         }
         if(s.charAt(0) == s.charAt(1)){
             return s.charAt(0) + "*" + printStars(s.substring(1));

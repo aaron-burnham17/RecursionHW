@@ -31,6 +31,7 @@ class RecursionTest {
 
         assertTrue("hel*lo".equals(printStars("hello")));
         assertTrue("as*sertion tes*seract".equals(printStars("assertion tesseract")));
+        assertEquals("",printStars(""));
 
     }
 
