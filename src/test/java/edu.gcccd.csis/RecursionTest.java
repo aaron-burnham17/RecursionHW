@@ -13,7 +13,7 @@ class RecursionTest {
     public void printEveryOtherTest(){
         int[] test = new int[]{1,2,3,4,5,6,7,8,9,10};
         int[] nullTest = null;
-        //Functional Tests
+        //Functional argument cases
         assertTrue("9753".equals(printEveryOther(test,2)));
         assertTrue("108642".equals(printEveryOther(test,1)));
         assertTrue("975".equals(printEveryOther(test,4)));
@@ -25,7 +25,7 @@ class RecursionTest {
     @Test
     public void printStarsTest(){
 
-
+        //Functional argument cases
         assertTrue("h*he*el*lo*o".equals(printStars("hheelloo")));
         assertTrue("h*h*h*h*h".equals(printStars("hhhhh")));
         assertTrue("hel*lo".equals(printStars("hello")));
