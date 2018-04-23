@@ -10,12 +10,7 @@ public class Recursion {
         if (k < 0||ia == null || k >= ia.length){
             return null;
         }
-        if(k >= ia.length-2){
-            return String.format("%s",ia[k]);
-        }
-        else {
-            return String.format("%s%s", printEveryOther(ia, k + 2),ia[k]);
-        }
+        return k >= ia.length - 2 ? String.format("%s",ia[k]) : String.format("%s%s", printEveryOther(ia, k + 2),ia[k]);
     }
 
     /*
@@ -27,12 +22,7 @@ public class Recursion {
         if(s == null || s.length() <= 1){
             return s;
         }
-        if(s.charAt(0) == s.charAt(1)){
-            return s.charAt(0) + "*" + printStars(s.substring(1));
-        }
-        else{
-            return s.charAt(0) + printStars(s.substring(1));
-        }
+        return s.charAt(0) == s.charAt(1) ? s.charAt(0) + "*" + printStars(s.substring(1)) : s.charAt(0) + printStars(s.substring(1));
     }
 
     /*

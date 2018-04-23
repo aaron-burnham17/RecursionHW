@@ -25,6 +25,7 @@ class RecursionTest {
     @Test
     public void printStarsTest(){
 
+
         assertTrue("h*he*el*lo*o".equals(printStars("hheelloo")));
         assertTrue("h*h*h*h*h".equals(printStars("hhhhh")));
         assertTrue("hel*lo".equals(printStars("hello")));
