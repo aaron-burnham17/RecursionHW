@@ -7,8 +7,15 @@ public class Recursion {
      * An example input array {1,2,3,4,5,6,7,8,9,10}, called with k=2, should output 9753
      */
     static String printEveryOther(final int[] ia, final int k) {
-        if (k < 0) throw new IllegalArgumentException("index must be greater or equal 0");
-        return null;
+        if (k < 0||ia == null || k >= ia.length){
+            return null;
+        }
+        if(k >= ia.length-2){
+            return String.format("%s",ia[k]);
+        }
+        else {
+            return String.format("%s%s", printEveryOther(ia, k + 2),ia[k]);
+        }
     }
 
     /*
@@ -16,7 +23,15 @@ public class Recursion {
      * An example input String "hello" should return hel*lo.
      */
     static String printStars(final String s) {
-        return null;
+        if(s.length() <= 1){
+            return String.format("%s",s.charAt(0));
+        }
+        if(s.charAt(0) == s.charAt(1)){
+            return s.charAt(0) + "*" + printStars(s.substring(1));
+        }
+        else{
+            return s.charAt(0) + printStars(s.substring(1));
+        }
     }
 
     /*
