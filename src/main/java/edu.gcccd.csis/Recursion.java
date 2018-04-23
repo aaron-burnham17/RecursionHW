@@ -7,9 +7,12 @@ public class Recursion {
      * An example input array {1,2,3,4,5,6,7,8,9,10}, called with k=2, should output 9753
      */
     static String printEveryOther(final int[] ia, final int k) {
-        if (k < 0||ia == null || k >= ia.length){
+        //Establishes Error Cases
+        if (k < 0 || ia == null || k >= ia.length){
             return null;
         }
+        //Determines whether ia is at the end of the array, if so it returns the element k is at, otherwise it recursively calls printEveryOther,
+        //displaying it in the format suggested by the comments above until it reaches the end of the array.
         return k >= ia.length - 2 ? String.format("%s",ia[k]) : String.format("%s%s", printEveryOther(ia, k + 2),ia[k]);
     }
 
@@ -18,10 +21,11 @@ public class Recursion {
      * An example input String "hello" should return hel*lo.
      */
     static String printStars(final String s) {
-        //null case first to short circuit given null s value
+        //null case first to short circuit given null s value, establishes null case, and end of string case.
         if(s == null || s.length() <= 1){
             return s;
         }
+        //Given the two characters are the same it places a star between them and recursively calls printStars on the remaining substring
         return s.charAt(0) == s.charAt(1) ? s.charAt(0) + "*" + printStars(s.substring(1)) : s.charAt(0) + printStars(s.substring(1));
     }
 
