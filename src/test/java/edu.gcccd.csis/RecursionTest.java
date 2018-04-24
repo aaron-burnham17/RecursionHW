@@ -20,8 +20,10 @@ public class RecursionTest {
         assertTrue("108642".equals(printEveryOther(test,1)));
         assertTrue("975".equals(printEveryOther(test,4)));
         //Error Cases
+        assertNull(printEveryOther(new int[] {},600));
         assertNull(printEveryOther(nullTest,5));
         assertNull(printEveryOther(test,-1));
+        assertNull(printEveryOther(test,11));
     }
 
     @Test

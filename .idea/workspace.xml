@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd95f74a-5a82-4d21-8e82-26c0809da61d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu.gcccd.csis/Recursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu.gcccd.csis/Recursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu.gcccd.csis/RecursionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu.gcccd.csis/RecursionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -21,20 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Recursion.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Recursion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu.gcccd.csis/Recursion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="122" selection-start-line="23" selection-start-column="122" selection-end-line="23" selection-end-column="122" />
+            <state relative-caret-position="272">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecursionTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RecursionTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu.gcccd.csis/RecursionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+            <state relative-caret-position="289">
+              <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -335,8 +335,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Library.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu.gcccd.csis/RecursionTest.groovy" />
-        <option value="$PROJECT_DIR$/src/test/java/edu.gcccd.csis/RecursionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu.gcccd.csis/Recursion.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu.gcccd.csis/RecursionTest.java" />
       </list>
     </option>
   </component>
@@ -443,7 +443,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RecursionTest.sumTest">
+  <component name="RunManager" selected="JUnit.RecursionTest.printEveryOtherTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -589,9 +589,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RecursionTest.printEveryOtherTest" />
         <item itemvalue="JUnit.RecursionTest.sumTest" />
         <item itemvalue="JUnit.RecursionTest.printStarsTest" />
-        <item itemvalue="JUnit.RecursionTest.printEveryOtherTest" />
         <item itemvalue="Application.Recursion" />
       </list>
     </recent_temporary>
@@ -610,12 +610,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RecursionTest_printStarsTest - 2018.04.23 at 09h 10m 10s.xml">
-      <configuration name="RecursionTest.printStarsTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecursionTest_printStarsTest - 2018.04.23 at 09h 10m 45s.xml">
-      <configuration name="RecursionTest.printStarsTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RecursionTest_printStarsTest - 2018.04.23 at 09h 11m 10s.xml">
       <configuration name="RecursionTest.printStarsTest" configurationId="JUnit" />
     </history-entry>
@@ -639,6 +633,12 @@
     </history-entry>
     <history-entry file="RecursionTest_sumTest - 2018.04.23 at 20h 52m 09s.xml">
       <configuration name="RecursionTest.sumTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecursionTest_printEveryOtherTest - 2018.04.24 at 09h 38m 48s.xml">
+      <configuration name="RecursionTest.printEveryOtherTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecursionTest_printEveryOtherTest - 2018.04.24 at 09h 39m 44s.xml">
+      <configuration name="RecursionTest.printEveryOtherTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -701,20 +701,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu.gcccd.csis/RecursionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu.gcccd.csis/Recursion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu.gcccd.csis/Recursion.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu.gcccd.csis/RecursionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="122" selection-start-line="23" selection-start-column="122" selection-end-line="23" selection-end-column="122" />
+        <state relative-caret-position="289">
+          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
