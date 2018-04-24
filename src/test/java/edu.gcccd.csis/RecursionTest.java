@@ -1,18 +1,18 @@
 package edu.gcccd.csis;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Random;
-
 import static edu.gcccd.csis.Recursion.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
-class RecursionTest {
+public class RecursionTest {
 
     @Test
-    public void printEveryOtherTest(){
+    public void printEveryOtherTest() {
         int[] test = new int[]{1,2,3,4,5,6,7,8,9,10};
         int[] nullTest = null;
         //Functional argument cases
@@ -25,8 +25,7 @@ class RecursionTest {
     }
 
     @Test
-    public void printStarsTest(){
-
+    public void printStarsTest() {
         //Functional argument cases
         assertTrue("h*he*el*lo*o".equals(printStars("hheelloo")));
         assertTrue("h*h*h*h*h".equals(printStars("hhhhh")));
@@ -35,14 +34,10 @@ class RecursionTest {
         // Error-Empty Cases
         assertEquals("",printStars(""));
         assertEquals(null,printStars(null));
-
     }
 
-    /*
-     * we know the sum of the 1st k positive numbers is n(n+1)2
-     */
     @Test
-    public void sum() {
+    public void sumTest() {
         for (int i = 0; i < 10; i++) {
             int k = new Random().nextInt(100);
             assertEquals(k * (k + 1) / 2, Recursion.sum(k));
@@ -57,4 +52,7 @@ class RecursionTest {
             assertTrue(true);
         }
     }
+
+
 }
+
