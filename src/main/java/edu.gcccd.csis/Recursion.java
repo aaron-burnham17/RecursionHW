@@ -7,7 +7,7 @@ public class Recursion {
      * An example input array {1,2,3,4,5,6,7,8,9,10}, called with k=2, should output 9753
      */
     static String printEveryOther(final int[] ia, final int k) {
-        //Establishes Error Cases
+        //Handles Error Cases
         if (k < 0 || ia == null || k >= ia.length){
             return null;
         }
@@ -21,7 +21,7 @@ public class Recursion {
      * An example input String "hello" should return hel*lo.
      */
     static String printStars(final String s) {
-        //null case first to short circuit given null s value, establishes null case, and end of string case.
+        //null case first to short circuit given null s value; handles null case, end of string case and empty string case.
         if(s == null || s.length() <= 1){
             return s;
         }
