@@ -11,7 +11,7 @@ public class Recursion {
         if (k < 0 || ia == null) return null;
 
 
-        //Determines whether k is past the end of the array, if so it returns an empty string is at, otherwise it recursively calls printEveryOther,
+        //Determines whether k is past the end of the array, if so it returns an empty string, otherwise it recursively calls printEveryOther,
         //displaying it in the format suggested by the comments above until it reaches the end of the array.
 
         return k >= ia.length ? "" : String.valueOf(printEveryOther(ia, k + 2)) + String.valueOf(ia[k]);
