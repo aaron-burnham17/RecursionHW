@@ -8,12 +8,13 @@ public class Recursion {
      */
     static String printEveryOther(final int[] ia, final int k) {
         //Handles Error Cases
-        if (k < 0 || ia == null || k >= ia.length){
-            return null;
-        }
-        //Determines whether ia is at the end of the array, if so it returns the element k is at, otherwise it recursively calls printEveryOther,
+        if (k < 0 || ia == null) return null;
+
+
+        //Determines whether k is past the end of the array, if so it returns an empty string is at, otherwise it recursively calls printEveryOther,
         //displaying it in the format suggested by the comments above until it reaches the end of the array.
-        return k >= ia.length - 2 ? String.format("%s",ia[k]) : String.format("%s%s", printEveryOther(ia, k + 2),ia[k]);
+
+        return k >= ia.length ? "" : String.valueOf(printEveryOther(ia, k + 2)) + String.valueOf(ia[k]);
     }
 
     /*
@@ -22,9 +23,7 @@ public class Recursion {
      */
     static String printStars(final String s) {
         //null case first to short circuit given null s value; handles null case, end of string case and empty string case.
-        if(s == null || s.length() <= 1){
-            return s;
-        }
+        if(s == null || s.length() <= 1) return s;
         //Given the two characters are the same it places a star between them and recursively calls printStars on the remaining substring
         return s.charAt(0) == s.charAt(1) ? s.charAt(0) + "*" + printStars(s.substring(1)) : s.charAt(0) + printStars(s.substring(1));
     }
